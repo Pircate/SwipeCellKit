@@ -75,7 +75,7 @@ The expansion style describes the behavior when the cell is swiped past a define
 ## Requirements
 
 * Swift 4.2
-* Xcode 10+
+* Xcode 9+
 * iOS 9.0+
 
 ## Installation
@@ -91,8 +91,8 @@ pod 'SwipeCellKit'
 # Get the latest on develop
 pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'develop'
 
-# If you have NOT upgraded to Swift 4.2, use the last non-swift 4.2 compatible release
-pod 'SwipeCellKit', '2.4.3'
+# If you like to live dangerously
+pod 'SwipeCellKit', :git => 'https://github.com/SwipeCellKit/SwipeCellKit.git', :branch => 'swift_4.2'
 ````
 
 #### [Carthage](https://github.com/Carthage/Carthage)
@@ -150,7 +150,7 @@ Set the `delegate` property on `SwipeCollectionViewCell`:
 
 ````swift
 override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! SwipeCollectionViewCell
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! as! SwipeCollectionViewCell
     cell.delegate = self
     return cell
 }
