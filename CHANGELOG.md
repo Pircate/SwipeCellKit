@@ -2,24 +2,7 @@
 
 `SwipeCellKit` adheres to [Semantic Versioning](http://semver.org/).
 
-## [2.5.4](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.5.4)
-
-#### Fixed
-
-- Fixed Carthage when building with Xcode 10.2 (#297)
-
----
-
-## [2.5.2](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.5.2)
-
-#### Fixed
-
-- Added support for Xcode 10.2 (#279, #283)
-- Compatibility with applications using Swift 5 (see Mail App Example)
-
----
-
-## [2.5.1](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.5.1)
+## [2.5.1](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.5.0)
 
 #### Fixed
 
