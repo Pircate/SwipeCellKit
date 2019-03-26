@@ -80,6 +80,11 @@ public protocol SwipeTableViewCellDelegate: class {
  Default implementation of `SwipeTableViewCellDelegate` methods
  */
 public extension SwipeTableViewCellDelegate {
+
+    func tableView(_ tableView: UITableView, canBeginEditingForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> Bool {
+        return !tableView.isEditing
+    }
+    
     func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
         return SwipeOptions()
     }
